@@ -1,0 +1,22 @@
+{
+  "name": "Frodo",
+  "version": "0.1.0",
+  "summary": "A short description of Frodo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chenlinios@sina.com/Frodo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chenlinios@sina.com": "chenlinios@sina.com"
+  },
+  "source": {
+    "git": "https://github.com/chenlinios@sina.com/Frodo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Frodo/Classes/**/*"
+}

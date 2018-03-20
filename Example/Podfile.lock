@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Frodo (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Frodo (from `../`)
+
+EXTERNAL SOURCES:
+  Frodo:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Frodo: 3ad76124655f3c9b30338ebd56d476ca65e1c70c
+
+PODFILE CHECKSUM: cf2f18fa032496c1912d80d6b3c5b9458ba213cf
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module Frodo {
+  umbrella header "Frodo-umbrella.h"
+
+  export *
+  module * { export * }
+}

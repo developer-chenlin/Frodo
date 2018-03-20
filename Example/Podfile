@@ -2,7 +2,10 @@ use_frameworks!
 
 target 'Frodo_Example' do
   pod 'Frodo', :path => '../'
-
+  pod 'CocoaAsyncSocket', '~> 7.6.2'
+  pod 'AFNetworking', '~> 3.2.0'
+  
+  
   target 'Frodo_Tests' do
     inherit! :search_paths
 
