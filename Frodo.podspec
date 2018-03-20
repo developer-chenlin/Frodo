@@ -36,7 +36,6 @@ Pod::Spec.new do |s|
   #   'Frodo' => ['Frodo/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
@@ -44,13 +43,22 @@ Pod::Spec.new do |s|
   s.subspec 'HTTP' do |sp|
       sp.resources = 'Frodo/Classes/HTTP/**/*'
       sp.dependency  'AFNetworking' , '~>3.2.0'
-  end
+   end
   
   # TCP模块
   s.subspec 'TCP' do |sp|
       sp.resources = 'Frodo/Classes/TCP/**/*'
       sp.dependency  'CocoaAsyncSocket', '~> 7.6.2'
+ 
   end
+  
+  # Frame扩展模块
+  s.subspec 'UIView+Frame' do |sp|
+      sp.resources = 'Frodo/Classes/UIView+Frame/**/*'
+ 
+  end
+  
+  
   
   
   

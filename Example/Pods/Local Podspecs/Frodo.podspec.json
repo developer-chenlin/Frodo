@@ -1,9 +1,9 @@
 {
   "name": "Frodo",
-  "version": "0.1.0",
-  "summary": "A short description of Frodo.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/chenlinios@sina.com/Frodo",
+  "version": "1.0.0",
+  "summary": "快速集成项目常用.",
+  "description": "分模块独立集成,可分模块配置。",
+  "homepage": "https://github.com/developer-chenlin/Frodo",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,31 @@
     "chenlinios@sina.com": "chenlinios@sina.com"
   },
   "source": {
-    "git": "https://github.com/chenlinios@sina.com/Frodo.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/developer-chenlin/Frodo.git",
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "Frodo/Classes/**/*"
+  "source_files": "Frodo/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "HTTP",
+      "resources": "Frodo/Classes/HTTP/**/*",
+      "dependencies": {
+        "AFNetworking": [
+          "~>3.2.0"
+        ]
+      }
+    },
+    {
+      "name": "TCP",
+      "resources": "Frodo/Classes/TCP/**/*",
+      "dependencies": {
+        "CocoaAsyncSocket": [
+          "~> 7.6.2"
+        ]
+      }
+    }
+  ]
 }

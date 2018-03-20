@@ -1,12 +1,36 @@
 PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.2)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Frodo (0.1.0)
+  - Frodo (1.0.0):
+    - Frodo/HTTP (= 1.0.0)
+    - Frodo/TCP (= 1.0.0)
+  - Frodo/HTTP (1.0.0):
+    - AFNetworking (~> 3.2.0)
+  - Frodo/TCP (1.0.0):
+    - CocoaAsyncSocket (~> 7.6.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
+  - CocoaAsyncSocket (~> 7.6.2)
   - FBSnapshotTestCase
   - Frodo (from `../`)
 
@@ -15,9 +39,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Frodo: 3ad76124655f3c9b30338ebd56d476ca65e1c70c
+  Frodo: 161131ac6f1287afd5a173349597197850264116
 
-PODFILE CHECKSUM: cf2f18fa032496c1912d80d6b3c5b9458ba213cf
+PODFILE CHECKSUM: 94393289a4134757e327595edf7b31c827df132b
 
 COCOAPODS: 1.4.0

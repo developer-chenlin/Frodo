@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "Frodo-HTTP.h"
+#import "HTTPManager.h"
+#import "Frodo-TCP.h"
+#import "TCPManager.h"
 
 FOUNDATION_EXPORT double FrodoVersionNumber;
 FOUNDATION_EXPORT const unsigned char FrodoVersionString[];
